@@ -1,12 +1,13 @@
 import { Link, NavLink } from 'react-router-dom'
 import { ToggleBurger } from './Animations'
+import homeImg from './assets/logo.png'
 
 //Header
 
 export const Header = () => {
     return (
         <header id="header">
-            <Link to='/home' id='home-logo'><img src='./src/assets/logo.png'/></Link>
+            <Link to='/home' id='home-logo'><img src={homeImg}/></Link>
             <div id='burger' onClick={ToggleBurger} className="burger-off">
                 <div className='burger-line' id='line-1'></div>
                 <div className='burger-line' id='line-2'></div>
