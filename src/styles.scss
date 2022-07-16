@@ -75,6 +75,7 @@ body{
           }
       }
       #main{
+        #home{
           #main-about{
             height: 510px;
             padding: 0 2rem;
@@ -179,6 +180,39 @@ body{
               }
             }
           }
+        }
+        .section-container{
+          padding-top: 1.5rem;
+          background-color: $co-e;
+          .section-title-container{
+            height: 3rem;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            background-color: $co-d;
+            color: $co-b;
+            .section-title{
+              text-transform: uppercase;
+            }
+          }
+          .section-content{
+            padding: 2.25rem 0;
+            .section-text{
+              padding: 0 2rem;
+              font-size: 1.2rem;
+            }
+            .text-separation{
+              height: 2.5rem;
+              margin: 1.5rem 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .separation-img{
+                height: 1.5rem;
+              }
+            }
+          }
+        }
       }
       #footer{
           height: 400px;

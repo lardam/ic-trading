@@ -50,3 +50,14 @@ export const Mission = () => {
         </div>
     )
 }
+
+export const Home = () => {
+    return(
+        <div id="home">
+            <About/>
+            <Action/>
+            <ActionMap/>
+            <Mission/>
+        </div> 
+    )
+}
