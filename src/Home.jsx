@@ -1,28 +1,8 @@
 import ActionMapImg from './assets/action-map.jpg'
-import { useState, useEffect } from 'react'
-
-export const Welcome = () => {
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.scrollY)
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [])
-
-    return (<div id='main-welcome-img' style={{transform: `translateY(${offsetY * 0.5}px)`}}/>)
-}
 
 export const About = () => {
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.scrollY)
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [])
-
     return(
-        <div id="main-about" style={{transform: `translateY(${offsetY * 0.4}px)`}}>
+        <div id="main-about">
         <div id="about-text-container">
           <h3 id="about-title">about</h3>
           <p id="about-text">We are a company specialized in the food market 
@@ -33,31 +13,9 @@ export const About = () => {
     )
 }
 
-export const Cow = () => {
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.scrollY)
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [])
-
-    return(
-        <div id='first-separator' style={{transform: `translateY(${offsetY * 0.4}px)`}}></div>
-    )
-}
-
 export const Action = () => {
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.scrollY)
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [])
-
     return(
-        <div id="main-action" style={{transform: `translateY(${offsetY * 0.2}px)`}}>
+        <div id="main-action">
             <div id="action-text-container">
                 <h3 id="action-title">what can we do for you?</h3>
                 <p id="action-text">In an increasingly complex market, we work achieving
@@ -70,16 +28,8 @@ export const Action = () => {
 }
 
 export const ActionMap = () => {
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.scrollY)
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [])
-
     return(
-        <div id="main-action-map" style={{transform: `translateY(${offsetY * 0.2}px)`}}>
+        <div id="main-action-map">
             <div id="action-map-container">
                 <h3 id="action-map-title">our action map</h3>
                 <img src={ActionMapImg} alt="Our action map"></img>
@@ -89,16 +39,8 @@ export const ActionMap = () => {
 }
 
 export const Mission = () => {
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.scrollY)
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [])
-
     return(
-        <div id="main-mission" style={{transform: `translateY(${offsetY * 0.2}px)`}}>
+        <div id="main-mission">
             <div id="mission-text-container">
                 <h3 id="mission-title">our vision and our mission</h3>
                 <p id="mission-text">At IC TRADE we have a great sense of responsibility in the challenges
@@ -114,9 +56,9 @@ export const Mission = () => {
 export const Home = () => {
     return(
         <div id="home">
-            <Welcome/>
+            <div id='main-welcome-img'/>
             <About/>
-            <Cow/>
+            <div id="first-separator"/>
             <Action/>
             <ActionMap/>
             <Mission/>

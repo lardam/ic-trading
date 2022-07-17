@@ -15,7 +15,6 @@ $co-e: #f2f2f2;
 
 body{
   #root{
-      min-height: 100vh;
       width: 100vw;
       overflow-x: hidden;
       scroll-behavior: smooth;
@@ -53,7 +52,7 @@ body{
             width: 100vw;
             background-color: $co-b;
             display: flex;
-            position: absolute;
+            position: fixed;
             bottom: 0;
             right: 100vw;
             transition: right 0.8s ease-in-out;
@@ -83,6 +82,7 @@ body{
           #main-welcome-img{
             height: 300px;
             background: url('./assets/welcome-img.jpg') center;
+            background-attachment: fixed;
             background-size: 750px 575px;
           }
           #main-about{
@@ -112,8 +112,9 @@ body{
             }
           }
           #first-separator{
-            height: 400px;
+            height: 250px;
             background: url('./assets/cow-1.jpg') center bottom;
+            background-attachment: fixed;
             background-size: 821px 546px;
           }
           #main-action{

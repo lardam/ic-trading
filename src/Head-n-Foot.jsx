@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { ToggleBurger } from './Animations'
 import homeImg from './assets/logo.png'
@@ -33,16 +32,8 @@ const CreateNavItems = NavItems.map((item) =>
 //Footer
 
 export const Footer = () => {
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.scrollY)
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [])
-
     return (
-        <footer id="footer" style={{transform: `translateY(${offsetY * 0.2}px)`}}>
+        <footer id="footer">
             <div id='footer-links-container'>
                 <h5 id='links-title'>links</h5>
                 <ul id='footer-links-list'>{CreateFooterItems}</ul>

@@ -6,7 +6,6 @@
   font-family: 'Open Sans', sans-serif; }
 
 body #root {
-  min-height: 100vh;
   width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth; }
@@ -39,7 +38,7 @@ body #root {
       width: 100vw;
       background-color: #303E48;
       display: flex;
-      position: absolute;
+      position: fixed;
       bottom: 0;
       right: 100vw;
       transition: right 0.8s ease-in-out; }
@@ -63,6 +62,7 @@ body #root {
     body #root #main #home #main-welcome-img {
       height: 300px;
       background: url("./assets/welcome-img.jpg") center;
+      background-attachment: fixed;
       background-size: 750px 575px; }
     body #root #main #home #main-about {
       height: 510px;
@@ -87,8 +87,9 @@ body #root {
           font-weight: 500;
           line-height: 2.2rem; }
     body #root #main #home #first-separator {
-      height: 400px;
+      height: 250px;
       background: url("./assets/cow-1.jpg") center bottom;
+      background-attachment: fixed;
       background-size: 821px 546px; }
     body #root #main #home #main-action {
       height: 736px;
