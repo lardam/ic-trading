@@ -6,6 +6,7 @@ function App() {
   return (
     <main id='main'>
     <Routes>
+      <Route path='/' element={<Home/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/about-us' element={<AboutUs/>}/>
       <Route path='/our-services' element={<OurServices/>}/>

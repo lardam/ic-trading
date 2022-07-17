@@ -14,11 +14,14 @@ body #root {
     height: 10rem;
     width: 100vw;
     padding: 0 2rem;
-    background-color: #303E48;
-    color: #f2f2f2;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    background-color: #303E48;
+    color: #f2f2f2;
+    z-index: 2; }
     body #root #header #home-logo img {
       height: 6rem;
       width: 6rem; }
@@ -55,119 +58,129 @@ body #root {
           color: #f2f2f2; }
         body #root #header #navbar #navlist li .active-link {
           font-weight: 600; }
-  body #root #main #home #main-about {
-    height: 510px;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #D8A57B; }
-    body #root #main #home #main-about #about-text-container {
-      height: 75%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: #303E48; }
-      body #root #main #home #main-about #about-text-container #about-title {
-        border-left: 5px solid #f2f2f2;
-        padding-left: 8px;
-        font-weight: 800;
-        text-transform: uppercase; }
-      body #root #main #home #main-about #about-text-container #about-text {
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 2.2rem; }
-  body #root #main #home #main-action {
-    height: 736px;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #535853;
-    color: #f2f2f2; }
-    body #root #main #home #main-action #action-text-container {
-      height: 75%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      body #root #main #home #main-action #action-text-container #action-title {
-        border-left: 5px solid #D8A57B;
-        padding-left: 8px;
-        font-weight: 800;
-        text-transform: uppercase; }
-      body #root #main #home #main-action #action-text-container #action-text {
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 2.2rem; }
-  body #root #main #home #main-action-map {
-    height: 400px;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2; }
-    body #root #main #home #main-action-map #action-map-container {
+  body #root #main {
+    margin-top: 10rem; }
+    body #root #main #home #main-welcome-img {
       height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      body #root #main #home #main-action-map #action-map-container #action-map-title {
-        border-left: 5px solid #D8A57B;
-        padding-left: 8px;
-        font-weight: 800;
-        text-transform: uppercase;
-        color: #141012; }
-      body #root #main #home #main-action-map #action-map-container img {
-        height: 300px; }
-  body #root #main #home #main-mission {
-    height: 920px;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #D8A57B;
-    color: #303E48; }
-    body #root #main #home #main-mission #mission-text-container {
-      height: 75%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      body #root #main #home #main-mission #mission-text-container #mission-title {
-        border-left: 5px solid #303E48;
-        padding-left: 8px;
-        font-weight: 800;
-        text-transform: uppercase; }
-      body #root #main #home #main-mission #mission-text-container #mission-text {
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 2.2rem; }
-  body #root #main .section-container {
-    padding-top: 1.5rem;
-    background-color: #f2f2f2; }
-    body #root #main .section-container .section-title-container {
-      height: 3rem;
+      background: url("./assets/welcome-img.jpg") center;
+      background-size: 750px 575px; }
+    body #root #main #home #main-about {
+      height: 510px;
       padding: 0 2rem;
       display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #D8A57B url(); }
+      body #root #main #home #main-about #about-text-container {
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #303E48; }
+        body #root #main #home #main-about #about-text-container #about-title {
+          border-left: 5px solid #f2f2f2;
+          padding-left: 8px;
+          font-weight: 800;
+          text-transform: uppercase; }
+        body #root #main #home #main-about #about-text-container #about-text {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.2rem; }
+    body #root #main #home #first-separator {
+      height: 400px;
+      background: url("./assets/cow-1.jpg") center bottom;
+      background-size: 821px 546px; }
+    body #root #main #home #main-action {
+      height: 736px;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #535853;
+      color: #f2f2f2; }
+      body #root #main #home #main-action #action-text-container {
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        body #root #main #home #main-action #action-text-container #action-title {
+          border-left: 5px solid #D8A57B;
+          padding-left: 8px;
+          font-weight: 800;
+          text-transform: uppercase; }
+        body #root #main #home #main-action #action-text-container #action-text {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.2rem; }
+    body #root #main #home #main-action-map {
+      height: 400px;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2; }
+      body #root #main #home #main-action-map #action-map-container {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        body #root #main #home #main-action-map #action-map-container #action-map-title {
+          border-left: 5px solid #D8A57B;
+          padding-left: 8px;
+          font-weight: 800;
+          text-transform: uppercase;
+          color: #141012; }
+        body #root #main #home #main-action-map #action-map-container img {
+          height: 300px; }
+    body #root #main #home #main-mission {
+      height: 920px;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
       align-items: center;
       background-color: #D8A57B;
       color: #303E48; }
-      body #root #main .section-container .section-title-container .section-title {
-        text-transform: uppercase; }
-    body #root #main .section-container .section-content {
-      padding: 2.25rem 0; }
-      body #root #main .section-container .section-content .section-text {
-        padding: 0 2rem;
-        font-size: 1.2rem; }
-      body #root #main .section-container .section-content .text-separation {
-        height: 2.5rem;
-        margin: 1.5rem 0;
+      body #root #main #home #main-mission #mission-text-container {
+        height: 75%;
         display: flex;
-        justify-content: center;
-        align-items: center; }
-        body #root #main .section-container .section-content .text-separation .separation-img {
-          height: 1.5rem; }
+        flex-direction: column;
+        justify-content: space-between; }
+        body #root #main #home #main-mission #mission-text-container #mission-title {
+          border-left: 5px solid #303E48;
+          padding-left: 8px;
+          font-weight: 800;
+          text-transform: uppercase; }
+        body #root #main #home #main-mission #mission-text-container #mission-text {
+          font-size: 1.4rem;
+          font-weight: 500;
+          line-height: 2.2rem; }
+    body #root #main .section-container {
+      padding-top: 1.5rem;
+      background-color: #f2f2f2; }
+      body #root #main .section-container .section-title-container {
+        height: 3rem;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        background-color: #D8A57B;
+        color: #303E48; }
+        body #root #main .section-container .section-title-container .section-title {
+          text-transform: uppercase; }
+      body #root #main .section-container .section-content {
+        padding: 2.25rem 0; }
+        body #root #main .section-container .section-content .section-text {
+          padding: 0 2rem;
+          font-size: 1.2rem; }
+        body #root #main .section-container .section-content .text-separation {
+          height: 2.5rem;
+          margin: 1.5rem 0;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          body #root #main .section-container .section-content .text-separation .separation-img {
+            height: 1.5rem; }
   body #root #footer {
     height: 400px;
     padding: 1rem 2rem;

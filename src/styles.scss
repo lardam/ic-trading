@@ -23,11 +23,14 @@ body{
           height: 10rem;
           width: 100vw;
           padding: 0 2rem;
-          background-color: $co-b;
-          color: $co-e;
+          position: fixed;
+          top: 0;
           display: flex;
           justify-content: space-between;
           align-items: center;
+          background-color: $co-b;
+          color: $co-e;
+          z-index: 2;
           #home-logo{
               img{
                   height: 6rem;
@@ -75,14 +78,20 @@ body{
           }
       }
       #main{
+        margin-top: 10rem;
         #home{
+          #main-welcome-img{
+            height: 300px;
+            background: url('./assets/welcome-img.jpg') center;
+            background-size: 750px 575px;
+          }
           #main-about{
             height: 510px;
             padding: 0 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: $co-d;
+            background: $co-d url();
             #about-text-container{
               height: 75%;
               display: flex;
@@ -101,6 +110,11 @@ body{
                 line-height: 2.2rem;
               }
             }
+          }
+          #first-separator{
+            height: 400px;
+            background: url('./assets/cow-1.jpg') center bottom;
+            background-size: 821px 546px;
           }
           #main-action{
             height: 736px;
