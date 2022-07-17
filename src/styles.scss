@@ -29,8 +29,8 @@ body{
           align-items: center;
           background-color: $co-b;
           color: $co-e;
-          z-index: 2;
           #home-logo{
+            z-index: 2;
               img{
                   height: 6rem;
                   width: 6rem;
@@ -40,6 +40,7 @@ body{
               height: 2.5rem;
               width: 2.5rem;
               padding: 0.3125rem;
+              z-index: 2;
               .burger-line{
                 height: 0.25rem;
                 width: 1.875rem;
@@ -82,7 +83,6 @@ body{
           #main-welcome-img{
             height: 300px;
             background: url('./assets/welcome-img.jpg') center;
-            background-attachment: fixed;
             background-size: 750px 575px;
           }
           #main-about{
@@ -113,8 +113,7 @@ body{
           }
           #first-separator{
             height: 250px;
-            background: url('./assets/cow-1.jpg') center bottom;
-            background-attachment: fixed;
+            background: url('./assets/cow-1.jpg') center;
             background-size: 821px 546px;
           }
           #main-action{
@@ -145,7 +144,7 @@ body{
             }
           }
           #main-action-map{
-            height: 400px;
+            height: 800px;
             padding: 0 2rem;
             display: flex;
             flex-direction: column;
@@ -166,6 +165,30 @@ body{
               }
               img{
                 height: 300px;
+              }
+            }
+            #alliances-title-container{
+              width: 100%;
+              #alliances-title{
+                border-left: 5px solid $co-d;
+                padding-left: 8px;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: $co-a;
+              }
+            }
+            #alliances-img-container{
+              height: 300px;
+              width: 100%;
+              margin-top: 1rem;
+              display: grid;
+              grid-template-columns: 70% 15% 15%;
+              .alliances-img{
+                border: 1px solid $co-c;
+                p{
+                  font-size: 1.3rem;
+                  writing-mode: sideways-lr;
+                }
               }
             }
           }

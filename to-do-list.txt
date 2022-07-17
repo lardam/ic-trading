@@ -1,1 +1,3 @@
 set home elements with a class for scss purposes
+
+home parallax

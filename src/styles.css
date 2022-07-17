@@ -19,15 +19,17 @@ body #root {
     justify-content: space-between;
     align-items: center;
     background-color: #303E48;
-    color: #f2f2f2;
-    z-index: 2; }
-    body #root #header #home-logo img {
-      height: 6rem;
-      width: 6rem; }
+    color: #f2f2f2; }
+    body #root #header #home-logo {
+      z-index: 2; }
+      body #root #header #home-logo img {
+        height: 6rem;
+        width: 6rem; }
     body #root #header #burger {
       height: 2.5rem;
       width: 2.5rem;
-      padding: 0.3125rem; }
+      padding: 0.3125rem;
+      z-index: 2; }
       body #root #header #burger .burger-line {
         height: 0.25rem;
         width: 1.875rem;
@@ -62,7 +64,6 @@ body #root {
     body #root #main #home #main-welcome-img {
       height: 300px;
       background: url("./assets/welcome-img.jpg") center;
-      background-attachment: fixed;
       background-size: 750px 575px; }
     body #root #main #home #main-about {
       height: 510px;
@@ -88,8 +89,7 @@ body #root {
           line-height: 2.2rem; }
     body #root #main #home #first-separator {
       height: 250px;
-      background: url("./assets/cow-1.jpg") center bottom;
-      background-attachment: fixed;
+      background: url("./assets/cow-1.jpg") center;
       background-size: 821px 546px; }
     body #root #main #home #main-action {
       height: 736px;
@@ -115,7 +115,7 @@ body #root {
           font-weight: 500;
           line-height: 2.2rem; }
     body #root #main #home #main-action-map {
-      height: 400px;
+      height: 800px;
       padding: 0 2rem;
       display: flex;
       flex-direction: column;
@@ -135,6 +135,25 @@ body #root {
           color: #141012; }
         body #root #main #home #main-action-map #action-map-container img {
           height: 300px; }
+      body #root #main #home #main-action-map #alliances-title-container {
+        width: 100%; }
+        body #root #main #home #main-action-map #alliances-title-container #alliances-title {
+          border-left: 5px solid #D8A57B;
+          padding-left: 8px;
+          font-weight: 800;
+          text-transform: uppercase;
+          color: #141012; }
+      body #root #main #home #main-action-map #alliances-img-container {
+        height: 300px;
+        width: 100%;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 70% 15% 15%; }
+        body #root #main #home #main-action-map #alliances-img-container .alliances-img {
+          border: 1px solid #535853; }
+          body #root #main #home #main-action-map #alliances-img-container .alliances-img p {
+            font-size: 1.3rem;
+            writing-mode: sideways-lr; }
     body #root #main #home #main-mission {
       height: 920px;
       padding: 0 2rem;

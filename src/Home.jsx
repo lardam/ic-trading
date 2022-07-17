@@ -34,6 +34,14 @@ export const ActionMap = () => {
                 <h3 id="action-map-title">our action map</h3>
                 <img src={ActionMapImg} alt="Our action map"></img>
             </div>
+            <div id='alliances-title-container'>
+                <h3 id='alliances-title'>we work with</h3>
+            </div>
+            <div id='alliances-img-container'>
+                <div className='alliances-img' id='alliance-1'><p>meat sector</p></div>
+                <div className='alliances-img' id='alliance-2'></div>
+                <div className='alliances-img' id='alliance-3'></div>
+            </div>
         </div>
     )
 }
@@ -52,6 +60,7 @@ export const Mission = () => {
         </div>
     )
 }
+
 
 export const Home = () => {
     return(
