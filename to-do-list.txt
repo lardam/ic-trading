@@ -1,3 +1,11 @@
-set home elements with a class for scss purposes
-
 home parallax
+
+responsive
+
+contact form w/backend
+
+clean code
+
+seo
+
+accesibility & lighthouse

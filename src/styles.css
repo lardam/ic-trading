@@ -13,13 +13,15 @@ body #root {
     height: 10rem;
     width: 100vw;
     padding: 0 2rem;
+    border-bottom: 2px solid #303E48;
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #303E48;
-    color: #f2f2f2; }
+    color: #f2f2f2;
+    z-index: 1; }
     body #root #header #home-logo {
       z-index: 2; }
       body #root #header #home-logo img {
@@ -115,15 +117,16 @@ body #root {
           font-weight: 500;
           line-height: 2.2rem; }
     body #root #main #home #main-action-map {
-      height: 800px;
-      padding: 0 2rem;
+      height: 900px;
+      padding: 25% 2rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       background-color: #f2f2f2; }
       body #root #main #home #main-action-map #action-map-container {
-        height: 300px;
+        height: 250px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
@@ -134,26 +137,53 @@ body #root {
           text-transform: uppercase;
           color: #141012; }
         body #root #main #home #main-action-map #action-map-container img {
-          height: 300px; }
-      body #root #main #home #main-action-map #alliances-title-container {
-        width: 100%; }
-        body #root #main #home #main-action-map #alliances-title-container #alliances-title {
-          border-left: 5px solid #D8A57B;
-          padding-left: 8px;
-          font-weight: 800;
-          text-transform: uppercase;
-          color: #141012; }
-      body #root #main #home #main-action-map #alliances-img-container {
-        height: 300px;
+          height: 200px;
+          width: 285px;
+          align-self: center; }
+      body #root #main #home #main-action-map #alliances-container {
+        height: 400px;
         width: 100%;
-        margin-top: 1rem;
-        display: grid;
-        grid-template-columns: 70% 15% 15%; }
-        body #root #main #home #main-action-map #alliances-img-container .alliances-img {
-          border: 1px solid #535853; }
-          body #root #main #home #main-action-map #alliances-img-container .alliances-img p {
-            font-size: 1.3rem;
-            writing-mode: sideways-lr; }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        body #root #main #home #main-action-map #alliances-container #alliances-title-container {
+          width: 100%; }
+          body #root #main #home #main-action-map #alliances-container #alliances-title-container #alliances-title {
+            border-left: 5px solid #D8A57B;
+            padding-left: 8px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #141012; }
+        body #root #main #home #main-action-map #alliances-container #alliances-img-container {
+          height: 300px;
+          width: 100%;
+          margin-top: 1rem;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); }
+          body #root #main #home #main-action-map #alliances-container #alliances-img-container .alliances-img {
+            padding: 0 0 1rem 0.5rem;
+            display: flex; }
+            body #root #main #home #main-action-map #alliances-container #alliances-img-container .alliances-img p {
+              color: #f2f2f2;
+              font-size: 1.3rem;
+              font-weight: 700;
+              text-transform: uppercase;
+              writing-mode: vertical-lr;
+              transform: rotate(180deg); }
+          body #root #main #home #main-action-map #alliances-container #alliances-img-container #alliance-1 {
+            border-right: 1px solid #f2f2f2;
+            background: url("./assets/cow-2.jpg");
+            background-size: 223px 332px;
+            background-position: 35% 95%; }
+          body #root #main #home #main-action-map #alliances-container #alliances-img-container #alliance-2 {
+            border-right: 1px solid #f2f2f2;
+            background: url("./assets/agro-1.jpg");
+            background-size: 384px 576px;
+            background-position: 50%; }
+          body #root #main #home #main-action-map #alliances-container #alliances-img-container #alliance-3 {
+            background: url("./assets/olives.jpg");
+            background-size: 316px 490px;
+            background-position: 35%; }
     body #root #main #home #main-mission {
       height: 920px;
       padding: 0 2rem;
